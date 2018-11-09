@@ -12,6 +12,8 @@ public class TurnCompactTest {
 		assertEquals(Color.XS, OUTTurn.take());
 	}
 
+	// En el "TurnTest.java" es peligroso tener varios metodos de cambio
+	// por lo que se compacta en este unico metodo de cambio
 	@Test
 	public void testChange() {
 		Turn OUTTurn = new Turn();
