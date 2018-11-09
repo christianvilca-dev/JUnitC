@@ -16,7 +16,13 @@ public class Coordinate {
 	}
 	
 	public Direction direction(Coordinate coordinate){
+		// Comprobar que se ha dado la coordenada 
+		// assert (confirmar) -> Detiene la ejecucion del programa si no cumple la condicion
+		// y debe ser activado en la maquina virtual
+		// no se debe habilitar en produccion
 		assert coordinate != null;
+		// No se permite que alguien pregunte que direccion tiene con ella misma (por cuestiones de estes software)
+		// Para tener direccion tienen que estar distantes, sino estan en el mismo punto y no hay direccion alguna
 		assert !this.equals(coordinate);
 		if (this.inRow(coordinate)){
 			return Direction.HORIZONTAL;

@@ -46,6 +46,8 @@ public class CoordenateTest {
 
 	public static void main(String[] args) {
 		CoordenateTest coordenateTest = new CoordenateTest();
+		// Es importante que se imforme de todos los errores que se han presentado
+		// por eso se ponen por separado los try para cada metodo
 		try {
 			coordenateTest.testInRow();
 		} catch (Exception e) {
