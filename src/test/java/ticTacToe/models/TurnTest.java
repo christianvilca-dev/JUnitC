@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+//Video 5 - 00:30:52
 public class TurnTest {
 
 	@Test
@@ -12,6 +13,7 @@ public class TurnTest {
 		Turn OUTTurn;
 		// act
 		OUTTurn = new Turn();
+		// Se recomienda mesclar mensajes unos con otros
 		Color resultColor = OUTTurn.take();
 		// assertions
 		Color expectedColor = Color.XS;

@@ -2,7 +2,7 @@ package ticTacToe.models;
 
 class Turn {
 
-	private int value = 0;
+	private int value;
 	
 	public Turn() {
 		value = 0;
@@ -19,7 +19,4 @@ class Turn {
 	public String aString() {
 		return "Turn [value=" + value + "]";
 	}
-    
-    
-	
 }
