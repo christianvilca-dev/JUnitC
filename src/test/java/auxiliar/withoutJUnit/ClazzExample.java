@@ -10,6 +10,7 @@ public class ClazzExample {
 		System.out.println("method2 invoked");
 	}
 	
+	// Se pone anotacion
 	@AnnotationExample
 	public void method3(){
 		System.out.println("method3 invoked");

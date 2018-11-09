@@ -9,6 +9,7 @@ public class MetaClazzesWithAnnotationsExample {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		try {
+			// Obtenemos la anotacion
 			Class clazz = Class.forName("auxiliar.withoutJUnit.ClazzExample");
 			Object object = clazz.getConstructor().newInstance();
 			Method[] methods = clazz.getDeclaredMethods();
@@ -20,6 +21,7 @@ public class MetaClazzesWithAnnotationsExample {
 					}
 				}
 			}
+//			method3 invoked
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (InstantiationException e) {
