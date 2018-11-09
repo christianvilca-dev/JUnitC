@@ -10,12 +10,13 @@ import org.junit.Test;
 //@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ExecutionTest {
 
+	// Es peligroso poner static en test, pero no siempre
 	private static int staticMember = 7;
 	
 	private int instanceMember;
 	
 	public ExecutionTest() {
-		instanceMember = 666;
+		instanceMember = 555;
 		System.out.println("New object: " + this);
 	}
 	
