@@ -10,6 +10,7 @@ import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.fail;
 
+// Ejemplos de assert
 public class AssertExample {
 
 	public void exampleAssertEquals() {
