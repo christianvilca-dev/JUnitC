@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+// Cuerpo - Constructor - para no repetir declaraciones
 public class TurnWithConstructorTest {
 
 	private Turn OUTTurn;
