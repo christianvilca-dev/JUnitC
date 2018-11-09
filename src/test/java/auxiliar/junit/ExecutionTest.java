@@ -4,6 +4,7 @@ import org.junit.Test;
 //import org.junit.FixMethodOrder;
 //import org.junit.runners.MethodSorters;
 
+// Especifica ciertos ordenes de metodos
 //@FixMethodOrder(MethodSorters.DEFAULT)
 //@FixMethodOrder(MethodSorters.JVM)
 //@FixMethodOrder(MethodSorters.NAME_ASCENDING)
