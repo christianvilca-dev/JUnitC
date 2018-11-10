@@ -10,6 +10,7 @@ import org.junit.Test;
 //@FixMethodOrder(MethodSorters.JVM)
 public class TurnSharedTest {
 
+	// Ponerlo "static" -> No recomendado, salvo un buen estudio para ahorrar tiempo de ejecucion drasticamente
 	private static Turn OUTTurn;
 
 	@BeforeClass
