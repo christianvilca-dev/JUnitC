@@ -13,16 +13,25 @@ public class Coordinate {
 	
 	private static final ClosedInterval LIMITS = new ClosedInterval(0, Coordinate.DIMENSION-1);
 
+	// NO HAY EXCEPCION
+	// Porque el constructor de "Coordinate" no levanta nada
 	public Coordinate(){
 		coordinate = new ticTacToe.utils.Coordinate();
 	}
 	
+	// SI HAY EXCEPCION
+	// Porque llama a setRow y setColumn que tienen un assert que si no se cumplen va ha levantar una asercion
+	// llamada assertionError
 	public Coordinate(int row, int column){
 		this();
 		this.setRow(row);
 		this.setColumn(column);
 	}
 	
+	// NO HAY EXCEPCION
+	// Porque me dan un objeto de la clase "Coordinate", 
+	// puede que al que lo construyo halla excepcion sino cumple las restricciones
+	// pero cuanda me lanza a mi el mensaje el objeto ya no hay excepcion
 	public Coordinate(Coordinate coordinate) {
 		this(coordinate.coordinate.getRow(),
 				coordinate.coordinate.getColumn());
@@ -38,12 +47,16 @@ public class Coordinate {
 		coordinate.setColumn(column);
 	}
 	
+	// NO HAY EXCEPCION
+	// Porque soy yo quien genera los numeros aleatorios entre 0 y 2
 	public void random() {
 		Random random = new Random(System.currentTimeMillis());
-		coordinate.setRow(random.nextInt(Coordinate.DIMENSION));
-		coordinate.setColumn(random.nextInt(Coordinate.DIMENSION));
+		this.setRow(random.nextInt(Coordinate.DIMENSION));
+		this.setColumn(random.nextInt(Coordinate.DIMENSION));
 	}
 	
+	// NO HAY EXCEPCION
+	// Porque son consultas
 	public Direction direction(Coordinate coordinate){
 		Direction direction = this.coordinate.direction(coordinate.coordinate);
 		if (direction == Direction.NON_EXISTENT) {
@@ -53,6 +66,7 @@ public class Coordinate {
 		return direction;
 	}
 	
+	// NO HAY EXCEPCION
 	private boolean inInverse(){
 		return coordinate.getRow() + coordinate.getColumn() == Coordinate.DIMENSION-1;
 	}
