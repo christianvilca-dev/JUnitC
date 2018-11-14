@@ -24,7 +24,7 @@ public class ExecutionReusabilityTest {
 	}
 	
 	@BeforeClass
-	public static void beforeAll(){
+	public static void beforeClass(){
 		staticMember++;
 		System.out.println("before class: " + staticMember);
 	}

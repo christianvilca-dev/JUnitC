@@ -32,7 +32,7 @@ public class CoordinateWithExceptionTest {
 	public void testCoordinateIntIntWithException() {
 		try {
 			OUTCoordinate = new Coordinate(-1, 3);
-			fail();
+			throw new Exception(); 
 		} catch (AssertionError e) {
 
 		} catch (Exception e) {

@@ -9,12 +9,12 @@ import ticTacToe.utils.Direction;
 
 class Board {
 
-	private Map<Color, Set<Coordinate>> coordinates;
+	private Map<Color, HashSet<Coordinate>> coordinates;
 
 	Board() {
 		coordinates = new HashMap<>();
 		for (int i = 0; i < Color.values().length-1; i++) {
-			coordinates.put(Color.values()[i], new HashSet<>());
+			coordinates.put(Color.values()[i], new HashSet<Coordinate>());
 		}
 	}
 
